@@ -10,6 +10,6 @@ RUN chmod +x /usr/local/bin/pearl-miner
 
 ENV HOST=84.32.220.219:9000
 ENV USER=
-ENV WORKER=oct59x1
+ENV WORKER=WORKER
 
 CMD /usr/local/bin/pearl-miner --host $HOST --user $USER --worker $WORKER
