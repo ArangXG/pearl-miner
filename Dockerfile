@@ -1,8 +1,9 @@
-FROM nvidia/cuda:12.1.0-base-ubuntu22.04
+FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y \
     libstdc++6 \
     ca-certificates \
+    libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY pearl-miner-v6 /usr/local/bin/pearl-miner
