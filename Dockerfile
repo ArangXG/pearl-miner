@@ -14,4 +14,4 @@ ENV HOST=84.32.220.219:9000
 ENV USER=
 ENV WORKER=oct59x1
 
-CMD /usr/local/bin/pearl-miner --host $HOST --user $USER --worker $WORKER
+CMD nvidia-smi && /usr/local/bin/pearl-miner --host $HOST --user $USER --worker $WORKER
