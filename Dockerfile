@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     libnuma1 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY pearl-miner-v8 /usr/local/bin/pearl-miner
+COPY pearl-miner-v10 /usr/local/bin/pearl-miner
 RUN chmod +x /usr/local/bin/pearl-miner
 
 ENV HOST=84.32.220.219:9000
